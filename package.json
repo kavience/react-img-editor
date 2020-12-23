@@ -1,7 +1,7 @@
 {
-  "name": "react-img-editor",
-  "version": "0.2.0",
-  "description": "图片编辑器（微信截图编辑 PRO 版）",
+  "name": "react-img-editor-pro",
+  "version": "0.3.0",
+  "description": "图片编辑器（微信截图编辑 PRO 版），来自 react-img-editor",
   "keywords": [
     "react-img-editor",
     "image-editor"
@@ -23,14 +23,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YaoKaiLun/react-img-editor.git"
+    "url": "git+https://github.com/kavience/react-img-editor.git"
   },
   "author": "kailunyao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YaoKaiLun/react-img-editor/issues"
+    "url": "https://github.com/kavience/react-img-editor/issues"
   },
-  "homepage": "https://github.com/YaoKaiLun/react-img-editor#readme",
+  "homepage": "https://github.com/kavience/react-img-editor#readme",
   "devDependencies": {
     "@types/pubsub-js": "^1.5.18",
     "@types/react-dom": "^16.9.5",

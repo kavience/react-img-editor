@@ -25,7 +25,7 @@ function Example() {
   // const image3 = 'https://cvte-dev-public.seewo.com/faq-service-test/bfdcc5337dfb43ce823a4c9743aba99c'
   // const image4 = 'https://cvte-dev-public.seewo.com/faq-service-test/bc87ceeb7b1a473da41e025e656af966'
 
-  // 获取图片 base64 
+  // 获取图片 base64
   function callBase64Back(data) {
     console.log(data)
   }

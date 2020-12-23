@@ -1,29 +1,29 @@
-import { DrawEventParams } from "../common/type";
-import Plugin from "./Plugin";
+import { DrawEventParams } from '../common/type'
+import Plugin from './Plugin'
 
-const blobToDataURI = (blob, callback) => {
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    callback(e.target.result);
-  };
-  reader.readAsDataURL(blob);
-};
+const blobToDataURI = (blob: any, callback: any) => {
+  const reader = new FileReader()
+  reader.onload = function(e: any) {
+    callback(e.target.result)
+  }
+  reader.readAsDataURL(blob)
+}
 
 export default class Save extends Plugin {
-  name = "save";
-  iconfont = "fa fa-save";
-  title = "保存";
+  name = 'save';
+  iconfont = 'fa fa-save';
+  title = '保存';
 
   onEnter = (drawEventParams: DrawEventParams) => {
-    const { stage, pixelRatio, callBase64Back } = drawEventParams;
+    const { stage, pixelRatio, callBase64Back } = drawEventParams
     // 延迟下载，等触发 plugin 的 onLeave 生命周期，清除未完成的现场
     setTimeout(() => {
-      const canvas = stage.toCanvas({ pixelRatio });
+      const canvas = stage.toCanvas({ pixelRatio })
       canvas.toBlob(function(blob: any) {
-        blobToDataURI(blob, (data) => {
-          callBase64Back && callBase64Back(data);
-        });
-      }, "image/jpeg");
-    }, 100);
+        blobToDataURI(blob, (data: any) => {
+          callBase64Back && callBase64Back(data)
+        })
+      }, 'image/jpeg')
+    }, 100)
   };
 }

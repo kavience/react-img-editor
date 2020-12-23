@@ -8,7 +8,7 @@ export default abstract class Plugin {
   defaultParamValue?: PluginParamValue;
   shapeName?: string;
 
-  callBase64Back?: (data:any) => void;
+  callBase64Back?: (data: any) => void;
   onEnter?: (params: DrawEventParams) => void;
   onDrawStart?: (params: DrawEventParams) => void;
   onClick?: (params: DrawEventParams) => void;

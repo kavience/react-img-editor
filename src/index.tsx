@@ -103,7 +103,7 @@ export default function ReactImageEditor(props: ReactImageEditorProps) {
         handlePluginParamValueChange,
         toolbarItemConfig,
         updateToolbarItemConfig,
-        callBase64Back: props.callBase64Back,
+        callBase64Back: props.callBase64Back as any,
       }}
     >
       <div className="react-img-editor" style={style}>
