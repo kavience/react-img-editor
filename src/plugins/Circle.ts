@@ -72,8 +72,8 @@ export default class Circle extends Plugin {
   onEnter = (drawEventParams: DrawEventParams) => {
     const {stage, drawLayer} = drawEventParams
     const container = stage.container()
-    container.tabIndex = 1 // make it focusable
-    container.focus()
+    // container.tabIndex = 1 // make it focusable
+    // container.focus()
     container.addEventListener('keyup', (e: any) => {
       if (e.key === 'Backspace' && this.selectedNode) {
         this.disableTransform(drawEventParams, this.selectedNode, true)
