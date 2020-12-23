@@ -1,6 +1,6 @@
 {
   "name": "react-img-editor-pro",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "图片编辑器（微信截图编辑 PRO 版），来自 react-img-editor",
   "keywords": [
     "react-img-editor",
@@ -14,8 +14,7 @@
     "build": "rc-tools run build",
     "gh-pages": "rc-tools run gh-pages",
     "pub": "rc-tools run update-self && rc-tools run pub",
-    "lint": "eslint . --ext .js,jsx,.ts,.tsx",
-    "prepublish": "rc-tools run guard"
+    "lint": "eslint . --ext .js,jsx,.ts,.tsx"
   },
   "config": {
     "entry": {},
