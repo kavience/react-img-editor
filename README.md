@@ -4,7 +4,14 @@ react-img-editor 是一个图像编辑器 react 组件，支持对图片进行�
 
 ![示例](https://s2.ax1x.com/2020/02/16/39gZcD.png)
 
-查看 [demo](https://yaokailun.github.io/react-img-editor/)
+查看 [demo](https://kavience.github.io/react-img-editor/)
+
+## ✨ react-img-editor-pro 说明
+
+项目是从 [react-img-editor](https://github.com/YaoKaiLun/react-img-editor) 分离。
+
+- 新增插件 save 功能，抛出图片的 base64 内容
+- 新增图标库，原插件图标库是固定的几个，且内网情况下无法使用，故新增了[图标库](https://www.thinkcmf.com/font/search/index.html)。
 
 ## ✨ 特性
 
@@ -31,18 +38,17 @@ import 'react-img-editor/assets/index.css'
 
 ## 🧰 API
 
-| 属性 | 描述 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| src | 图片 url | string | - |
-| width | 画板宽度 | number? | 700 |
-| height | 画板高度 | number? | 500 |
-| style | 画板样式 | React.CSSProperties | - |
-| plugins | 自定义的插件 | Plugin[] | [] |
-| toolbar | 工具栏配置 | { items: string[] } | {items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', '|', 'repeal', 'download', 'crop']} |
-| getStage | 获取 KonvaJS 的 [Stage](https://konvajs.org/api/Konva.Stage.html) 对象，可用于下载图片等操作 | (stage: any) => void |
-| defaultPluginName | 默认选中的插件名称 | string? | - |
-| crossOrigin | 处理跨域图片 | string? | - |
-
+| 属性              | 描述                                                                                         | 类型                 | 默认值                                                                   |
+| ----------------- | -------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------ |
+| src               | 图片 url                                                                                     | string               | -                                                                        |
+| width             | 画板宽度                                                                                     | number?              | 700                                                                      |
+| height            | 画板高度                                                                                     | number?              | 500                                                                      |
+| style             | 画板样式                                                                                     | React.CSSProperties  | -                                                                        |
+| plugins           | 自定义的插件                                                                                 | Plugin[]             | []                                                                       |
+| toolbar           | 工具栏配置                                                                                   | { items: string[] }  | {items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', ' | ', 'repeal', 'download', 'crop']} |
+| getStage          | 获取 KonvaJS 的 [Stage](https://konvajs.org/api/Konva.Stage.html) 对象，可用于下载图片等操作 | (stage: any) => void |
+| defaultPluginName | 默认选中的插件名称                                                                           | string?              | -                                                                        |
+| crossOrigin       | 处理跨域图片                                                                                 | string?              | -                                                                        |
 
 ## 📝 TODO
 
