@@ -48181,10 +48181,9 @@ var Arrow = /*#__PURE__*/function (_Plugin) {
     _this.onEnter = function (drawEventParams) {
       var stage = drawEventParams.stage,
           drawLayer = drawEventParams.drawLayer;
-      var container = stage.container();
-      container.tabIndex = 1; // make it focusable
+      var container = stage.container(); // container.tabIndex = 1 // make it focusable
+      // container.focus()
 
-      container.focus();
       container.addEventListener('keyup', function (e) {
         if (e.key === 'Backspace' && _this.selectedNode) {
           _this.disableTransform(drawEventParams, _this.selectedNode, true);
@@ -48421,10 +48420,9 @@ var Circle = /*#__PURE__*/function (_Plugin) {
     _this.onEnter = function (drawEventParams) {
       var stage = drawEventParams.stage,
           drawLayer = drawEventParams.drawLayer;
-      var container = stage.container();
-      container.tabIndex = 1; // make it focusable
+      var container = stage.container(); // container.tabIndex = 1 // make it focusable
+      // container.focus()
 
-      container.focus();
       container.addEventListener('keyup', function (e) {
         if (e.key === 'Backspace' && _this.selectedNode) {
           _this.disableTransform(drawEventParams, _this.selectedNode, true);
@@ -49622,10 +49620,9 @@ var Rect = /*#__PURE__*/function (_Plugin) {
     _this.onEnter = function (drawEventParams) {
       var stage = drawEventParams.stage,
           drawLayer = drawEventParams.drawLayer;
-      var container = stage.container();
-      container.tabIndex = 1; // make it focusable
+      var container = stage.container(); // container.tabIndex = 1 // make it focusable
+      // container.focus()
 
-      container.focus();
       container.addEventListener('keyup', function (e) {
         if (e.key === 'Backspace' && _this.selectedNode) {
           _this.disableTransform(drawEventParams, _this.selectedNode, true);
@@ -50105,10 +50102,9 @@ var Text = /*#__PURE__*/function (_Plugin) {
       var stage = drawEventParams.stage,
           drawLayer = drawEventParams.drawLayer;
       var container = stage.container();
-      container.style.cursor = 'text';
-      container.tabIndex = 1; // make it focusable
+      container.style.cursor = 'text'; // container.tabIndex = 1 // make it focusable
+      // container.focus()
 
-      container.focus();
       container.addEventListener('keyup', function (e) {
         if (e.key === 'Backspace' && _this.selectedNode) {
           _this.disableTransform(drawEventParams, _this.selectedNode, true);
