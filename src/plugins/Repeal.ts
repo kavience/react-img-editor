@@ -4,7 +4,7 @@ import { DrawEventParams } from '../common/type'
 
 export default class Repeal extends Plugin {
   name = 'repeal'
-  iconfont = 'iconfont icon-repeal'
+  iconfont = 'fa fa-reply'
   title = '撤销'
 
   onEnter = (drawEventParams: DrawEventParams) => {

@@ -7,7 +7,7 @@ import { uuid } from '../common/utils'
 
 export default class Text extends Plugin {
   name = 'text'
-  iconfont = 'iconfont icon-text'
+  iconfont = 'fa fa-text-width'
   title = '插入文字'
   params = ['fontSize', 'color'] as PluginParamName[]
   defaultParamValue = {

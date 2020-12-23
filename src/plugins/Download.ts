@@ -4,7 +4,7 @@ import Plugin from './Plugin'
 
 export default class Download extends Plugin {
   name = 'download'
-  iconfont = 'iconfont icon-download'
+  iconfont = 'fa fa-download'
   title = '下载图片'
 
   onEnter = (drawEventParams: DrawEventParams) => {

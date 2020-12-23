@@ -16,13 +16,13 @@ interface ReactImageEditorProps {
   };
   src: string;
   getStage?: (stage: any) => void;
+  callBase64Back?: (data: any) => void;
   defaultPluginName?: string;
   crossOrigin?: string;
 }
 
 export default function ReactImageEditor(props: ReactImageEditorProps) {
   const [imageObj, setImageObj] = useState<HTMLImageElement | null>(null)
-
 
   const pluginFactory = new PluginFactory()
   const plugins = [...pluginFactory.plugins, ...props.plugins!]
@@ -103,6 +103,7 @@ export default function ReactImageEditor(props: ReactImageEditorProps) {
         handlePluginParamValueChange,
         toolbarItemConfig,
         updateToolbarItemConfig,
+        callBase64Back: props.callBase64Back,
       }}
     >
       <div className="react-img-editor" style={style}>
@@ -129,6 +130,6 @@ ReactImageEditor.defaultProps = {
   style: {},
   plugins: [],
   toolbar: {
-    items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', '|', 'repeal', 'download', 'crop'],
+    items: ['pen', 'eraser', 'arrow', 'rect', 'circle', 'mosaic', 'text', '|', 'repeal', 'download', 'crop', 'save'],
   },
 } as Partial<ReactImageEditorProps>

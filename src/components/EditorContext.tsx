@@ -16,6 +16,7 @@ export interface EditorContextProps {
   handlePluginParamValueChange: (paramValue: PluginParamValue) => void;
   toolbarItemConfig: any;
   updateToolbarItemConfig: (config: any) => void;
+  callBase64Back: (data: any) => void;
 }
 
 export const EditorContext = React.createContext({} as EditorContextProps)

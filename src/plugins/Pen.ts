@@ -5,7 +5,7 @@ import { uuid } from '../common/utils'
 
 export default class Pen extends Plugin {
   name = 'pen'
-  iconfont = 'iconfont icon-pen'
+  iconfont = 'fa fa-pencil'
   title = '画笔'
   params = ['strokeWidth', 'lineType', 'color'] as PluginParamName[]
   defaultParamValue = {

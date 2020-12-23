@@ -6,7 +6,7 @@ import { uuid } from '../common/utils'
 
 export default class Rect extends Plugin {
   name = 'rect'
-  iconfont = 'iconfont icon-square'
+  iconfont = 'fa fa-square-o'
   title = '插入矩形'
   params = ['strokeWidth', 'lineType', 'color'] as PluginParamName[]
   defaultParamValue = {

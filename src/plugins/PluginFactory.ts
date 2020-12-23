@@ -8,6 +8,7 @@ import Pen from './Pen'
 import Rect from './Rect'
 import Repeal from './Repeal'
 import Text from './Text'
+import Save from './Save'
 
 export default class PluginFactory {
   plugins = [
@@ -21,5 +22,6 @@ export default class PluginFactory {
     new Rect(),
     new Repeal(),
     new Text(),
+    new Save(),
   ]
 }
